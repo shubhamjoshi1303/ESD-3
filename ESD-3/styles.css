@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+  padding: 0 auto;
+  border: 2px solid black;
+  letter-spacing: 0.75;
+  min-height: 100vh;
+}
+
+/* Typography */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #080808;
+  background-image: url("./img/idk.jpeg");
+  background-size: 170%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-blend-mode: difference;
+  color: white;
+  margin: 0;
+}
+
+.main-content {
+  width: 50%;
+  margin: auto 0;
+}
+/* form */
+.form-style {
+  width: 80%;
+  max-width: 300px;
+}
+
+input,
+.btn {
+  width: 70%;
+  max-width: 400px;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  padding: 0.85em;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-image: linear-gradient(270deg, #ff713b 0%, #ffa51d 100%);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn:hover,
+.btn:focus {
+  color: white;
+  background-color: black;
+  transform: scale(1.1);
+}
+input {
+  border: 1px solid black;
+}
+input:hover {
+  transform: scale(1.1);
+  transition: transform 190ms;
+}
+.top-text {
+  order: -1;
+  font-weight: bold;
+  font-size: small;
+  border-bottom: 3px solid black;
+  border-image: linear-gradient(270deg, #080808 0%, #e4dcd0 100%) 1;
+}
+h1 {
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 500;
+  color: black;
+  margin: auto;
+}
+/* media query */
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  h1 {
+    margin-bottom: none;
+    padding-bottom: 0%;
+  }
+
+  input,
+  .btn {
+    padding: 1em;
+  }
+}
